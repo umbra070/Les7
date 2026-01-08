@@ -3,7 +3,7 @@
 void main() {
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+
     //Ex1
     int[] intArr = new int[3];
     intArr[0] = 1;
@@ -14,25 +14,74 @@ void main() {
     //Ex2
     System.out.println("\n\rEx2\n\r");
     System.out.println("\n\rInt array:\n\r");
-    System.out.println(String.format("%d, %d, %d", intArr[0], intArr[1], intArr[2]));
+    String intArrStr = "";
+    for (int i = 0; i < intArr.length; i++) {
+        if (i != (intArr.length - 1)) {
+            intArrStr = intArrStr.concat(String.format("%d, ", intArr[i]));
+        } else {
+            intArrStr = intArrStr.concat("" + intArr[i]);
+        }
+    }
+    System.out.println(intArrStr);
     System.out.println("\n\rFloat array:\n\r");
-    System.out.println(String.format("%f, %f, %f", floatArr[0], floatArr[1], floatArr[2]));
+    String floatArrStr = "";
+    for (int i = 0; i < floatArr.length; i++) {
+        if (i != (floatArr.length - 1)) {
+            floatArrStr = floatArrStr.concat(String.format("%f, ", floatArr[i]));
+        } else {
+            floatArrStr = floatArrStr.concat("" + floatArr[i]);
+        }
+    }
+    System.out.println(floatArrStr);
     System.out.println("\n\rString array:\n\r");
-    System.out.println(String.format("%s, %s, %s", strArr[0], strArr[1], strArr[2]));
+    String strArrStr = "";
+    for (int i = 0; i < strArr.length; i++) {
+        if (i != (strArr.length - 1)) {
+            strArrStr = strArrStr.concat(String.format("%s, ", strArr[i]));
+        } else {
+            strArrStr = strArrStr.concat(strArr[i]);
+        }
+    }
+    System.out.println(strArrStr);
     //Ex3
-    System.out.println("\n\rEx3\n\r");
     System.out.println("\n\rInt array:\n\r");
-    System.out.println(String.format("%d, %d, %d", intArr[2], intArr[1], intArr[0]));
+    String intArrStrInvert = "";
+    for (int i = intArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
+            intArrStrInvert = intArrStrInvert.concat(String.format("%d, ", intArr[i]));
+        } else {
+            intArrStrInvert = intArrStrInvert.concat("" + intArr[i]);
+        }
+    }
+    System.out.println(intArrStrInvert);
     System.out.println("\n\rFloat array:\n\r");
-    System.out.println(String.format("%f, %f, %f", floatArr[2], floatArr[1], floatArr[0]));
+    String floatArrStrInvert = "";
+    for (int i = floatArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
+            floatArrStrInvert = floatArrStrInvert.concat(String.format("%f, ", floatArr[i]));
+        } else {
+            floatArrStrInvert = floatArrStrInvert.concat("" + floatArr[i]);
+        }
+    }
+    System.out.println(floatArrStrInvert);
     System.out.println("\n\rString array:\n\r");
-    System.out.println(String.format("%s, %s, %s", strArr[2], strArr[1], strArr[0]));
+    String strArrStrInvert = "";
+    for (int i = strArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
+            strArrStrInvert = strArrStrInvert.concat(String.format("%s, ", strArr[i]));
+        } else {
+            strArrStrInvert = strArrStrInvert.concat(strArr[i]);
+        }
+    }
+    System.out.println(strArrStrInvert);
     //Ex4
     System.out.println("\n\rEx4\n\r");
-    for(int ind = 0; ind < intArr.length; ind++){
-        if((intArr[ind] % 2) != 0){
+    for (int ind = 0; ind < intArr.length; ind++) {
+        if ((intArr[ind] % 2) != 0) {
             intArr[ind] += 1;
         }
-        System.out.println(intArr[ind]);
+    }
+    for (int i : intArr) {
+        System.out.println(i);
     }
 }
