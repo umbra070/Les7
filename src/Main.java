@@ -15,30 +15,30 @@ void main() {
     System.out.println("\n\rEx2\n\r");
     System.out.println("\n\rInt array:\n\r");
     String intArrStr = "";
-    for(int i = 0; i < intArr.length; i++){
-        if(i != (intArr.length - 1)){
+    for (int i = 0; i < intArr.length; i++) {
+        if (i != (intArr.length - 1)) {
             intArrStr = intArrStr.concat(String.format("%d, ", intArr[i]));
-        }else{
+        } else {
             intArrStr = intArrStr.concat("" + intArr[i]);
         }
     }
     System.out.println(intArrStr);
     System.out.println("\n\rFloat array:\n\r");
     String floatArrStr = "";
-    for(int i = 0; i < floatArr.length; i++){
-        if(i != (floatArr.length - 1)){
+    for (int i = 0; i < floatArr.length; i++) {
+        if (i != (floatArr.length - 1)) {
             floatArrStr = floatArrStr.concat(String.format("%f, ", floatArr[i]));
-        }else{
+        } else {
             floatArrStr = floatArrStr.concat("" + floatArr[i]);
         }
     }
     System.out.println(floatArrStr);
     System.out.println("\n\rString array:\n\r");
     String strArrStr = "";
-    for(int i = 0; i < strArr.length; i++){
-        if(i != (strArr.length - 1)){
+    for (int i = 0; i < strArr.length; i++) {
+        if (i != (strArr.length - 1)) {
             strArrStr = strArrStr.concat(String.format("%s, ", strArr[i]));
-        }else{
+        } else {
             strArrStr = strArrStr.concat(strArr[i]);
         }
     }
@@ -46,30 +46,30 @@ void main() {
     //Ex3
     System.out.println("\n\rInt array:\n\r");
     String intArrStrInvert = "";
-    for(int i = intArr.length-1; i >= 0; i--){
-        if(i != 0){
+    for (int i = intArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
             intArrStrInvert = intArrStrInvert.concat(String.format("%d, ", intArr[i]));
-        }else{
+        } else {
             intArrStrInvert = intArrStrInvert.concat("" + intArr[i]);
         }
     }
     System.out.println(intArrStrInvert);
     System.out.println("\n\rFloat array:\n\r");
     String floatArrStrInvert = "";
-    for(int i = floatArr.length-1; i >= 0; i--){
-        if(i != 0){
+    for (int i = floatArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
             floatArrStrInvert = floatArrStrInvert.concat(String.format("%f, ", floatArr[i]));
-        }else{
+        } else {
             floatArrStrInvert = floatArrStrInvert.concat("" + floatArr[i]);
         }
     }
     System.out.println(floatArrStrInvert);
     System.out.println("\n\rString array:\n\r");
     String strArrStrInvert = "";
-    for(int i = strArr.length-1; i >= 0; i--){
-        if(i != 0){
+    for (int i = strArr.length - 1; i >= 0; i--) {
+        if (i != 0) {
             strArrStrInvert = strArrStrInvert.concat(String.format("%s, ", strArr[i]));
-        }else{
+        } else {
             strArrStrInvert = strArrStrInvert.concat(strArr[i]);
         }
     }
