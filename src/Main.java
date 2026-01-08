@@ -25,7 +25,7 @@ void main() {
     System.out.println(String.format("%d, %d, %d", intArr[2], intArr[1], intArr[0]));
     System.out.println("\n\rFloat array:\n\r");
     System.out.println(String.format("%f, %f, %f", floatArr[2], floatArr[1], floatArr[0]));
-    System.out.println("\n\rString array:\n\r");
+    System.out.println("\n\rString array:   \n\r");
     System.out.println(String.format("%s, %s, %s", strArr[2], strArr[1], strArr[0]));
     //Ex4
     System.out.println("\n\rEx4\n\r");
