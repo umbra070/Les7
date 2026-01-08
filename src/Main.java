@@ -14,25 +14,39 @@ void main() {
     //Ex2
     System.out.println("\n\rEx2\n\r");
     System.out.println("\n\rInt array:\n\r");
-    System.out.println(String.format("%d, %d, %d", intArr[0], intArr[1], intArr[2]));
+    for (int i : intArr) {
+        System.out.println(i);
+    }
     System.out.println("\n\rFloat array:\n\r");
-    System.out.println(String.format("%f, %f, %f", floatArr[0], floatArr[1], floatArr[2]));
+    for (float f : floatArr) {
+        System.out.println(f);
+    }
     System.out.println("\n\rString array:\n\r");
-    System.out.println(String.format("%s, %s, %s", strArr[0], strArr[1], strArr[2]));
+    for (String s : strArr) {
+        System.out.println(s);
+    }
     //Ex3
     System.out.println("\n\rEx3\n\r");
     System.out.println("\n\rInt array:\n\r");
-    System.out.println(String.format("%d, %d, %d", intArr[2], intArr[1], intArr[0]));
+    for (int i = intArr.length - 1; i >= 0; i--) {
+        System.out.println(intArr[i]);
+    }
     System.out.println("\n\rFloat array:\n\r");
-    System.out.println(String.format("%f, %f, %f", floatArr[2], floatArr[1], floatArr[0]));
-    System.out.println("\n\rString array:   \n\r");
-    System.out.println(String.format("%s, %s, %s", strArr[2], strArr[1], strArr[0]));
+    for (int i = floatArr.length - 1; i >= 0; i--) {
+        System.out.println(floatArr[i]);
+    }
+    System.out.println("\n\rString array:\n\r");
+    for (int i = strArr.length - 1; i >= 0; i--) {
+        System.out.println(strArr[i]);
+    }
     //Ex4
     System.out.println("\n\rEx4\n\r");
-    for(int ind = 0; ind < intArr.length; ind++){
-        if((intArr[ind] % 2) != 0){
+    for (int ind = 0; ind < intArr.length; ind++) {
+        if ((intArr[ind] % 2) != 0) {
             intArr[ind] += 1;
         }
-        System.out.println(intArr[ind]);
+    }
+    for (int i : intArr) {
+        System.out.println(i);
     }
 }
